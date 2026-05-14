@@ -1,76 +1,299 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bibliothek im Gespräch</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online-Bibel-Leserunde</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#F8F5EF;
+  color:#8A6A52;
+  line-height:1.7;
+}
+
+header{
+  background:linear-gradient(to bottom,#4FA0A6,#E9D8B4);
+  padding:80px 20px;
+  text-align:center;
+  color:white;
+}
+
+header h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+header p{
+  max-width:700px;
+  margin:auto;
+  font-size:1.2rem;
+}
+
+nav{
+  background:#F8F5EF;
+  padding:20px;
+  text-align:center;
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#8A6A52;
+  font-weight:bold;
+}
+
+section{
+  padding:80px 10%;
+}
+
+h2{
+  margin-bottom:30px;
+  font-size:2.5rem;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  margin-bottom:30px;
+}
+
+.quote{
+  background:#4FA0A6;
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+  font-size:2rem;
+  font-style:italic;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:20px;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  max-width:600px;
+}
+
+input,
+textarea{
+  padding:15px;
+  border:none;
+  border-radius:15px;
+  font-size:1rem;
+}
+
+textarea{
+  min-height:150px;
+}
+
+button{
+  background:#8A6A52;
+  color:white;
+  border:none;
+  padding:15px;
+  border-radius:30px;
+  cursor:pointer;
+  font-size:1rem;
+}
+
+footer{
+  background:#8A6A52;
+  color:#F8F5EF;
+  text-align:center;
+  padding:35px 20px;
+}
+
+.footer-buttons{
+  margin-top:18px;
+}
+
+.footer-buttons a{
+  display:inline-block;
+  margin:8px;
+  padding:10px 22px;
+  background:#F8F5EF;
+  color:#8A6A52;
+  text-decoration:none;
+  border-radius:25px;
+  font-weight:bold;
+}
+
+.footer-buttons a:hover{
+  background:#E9D8B4;
+}
+
+@media(max-width:768px){
+
+  header h1{
+    font-size:2.5rem;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+}
+
+</style>
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="overlay">
-    <nav>
-      <div class="logo">Bibliothek im Gespräch</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#aktuell">Aktuell</a></li>
-        <li><a href="#archiv">Archiv</a></li>
-        <li><a href="#kontakt">Anmeldung</a></li>
-      </ul>
-    </nav>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#aktuell">Aktuell</a>
+  <a href="#archiv">Archiv</a>
+  <a href="#kontakt">Anmeldung</a>
+</nav>
 
-    <section id="home" class="hero-content">
-      <h1>Zwischen Geschichten und Menschen</h1>
-      <p>
-        Gemeinsam lesen, verstehen, lachen und erinnern.
-        Ein internationaler literarischer Gesprächsraum zwischen Meer, Bibliothek und menschlicher Begegnung.
-      </p>
+<header id="home">
+  <h1>Online-Bibel-Leserunde</h1>
 
-      <blockquote>
-        „Vielleicht sind unsere Hände Gottes Hände auf der Erde.“
-      </blockquote>
-
-      <a href="#aktuell" class="button">Zum nächsten Treffen</a>
-    </section>
-  </div>
+  <p>
+    Internationales literarisches Treffen für neugierige,
+    kritische, lustige und tiefgründige Gespräche
+    über Bibeltexte und Leben.
+  </p>
 </header>
 
-<section id="aktuell" class="section card-section">
+<section id="aktuell">
+
   <h2>Nächstes Treffen</h2>
 
   <div class="card">
+
     <h3>Wissen oder Zweifel?</h3>
-    <p><strong>Datum:</strong> 26. November · 19:00 Uhr</p>
-    <p><strong>Ort:</strong> Online über Zoom</p>
 
     <p>
-      Wir lesen gemeinsam Texte über Vertrauen, Zweifel und menschliche Erfahrung.
-      Offen für Fragen, Humor und unterschiedliche Perspektiven.
+      26. November · 19:00 Uhr · Zoom
     </p>
+
+    <br>
+
+    <p>
+      Gemeinsam lesen wir Texte über Vertrauen,
+      Menschlichkeit, Zweifel und Hoffnung.
+      Offen für Fragen, Humor und verschiedene Perspektiven.
+    </p>
+
   </div>
+
 </section>
 
-<section class="section quote-section">
-  <p>
-    „Wir lesen nicht nur Bücher, sondern auch einander.“
-  </p>
-</section>
+<div class="quote">
+  „Wir lesen nicht nur Bücher, sondern auch einander.“
+</div>
 
-<section id="archiv" class="section">
+<section id="archiv">
+
   <h2>Archiv vergangener Gespräche</h2>
 
-  <div class="archive-grid">
+  <div class="gallery">
 
-    <div class="archive-card">
-      <img src="images/skizze1.png" alt="Gesprächsskizze">
+    <div class="card">
+      <img src="images/skizze1.png" alt="Skizze">
       <h3>Erfahrung statt Antworten</h3>
+
       <p>
-        Gespräch über Zweifel, Vertrauen und die Frage,
-        wie Menschen mit Unsicherheit leben.
+        Gespräch über Zweifel, Vertrauen und menschliche Erfahrung.
       </p>
     </div>
 
-    <div class="archive-card">
-      <img src="images/skizze2.png" alt="Literarische Zeichnung">
+    <div class="card">
+      <img src="images/skizze2.png" alt="Skizze">
+
+      <h3>Wissen oder Glauben?</h3>
+
+      <p>
+        Literarische und philosophische Gespräche
+        über Spiritualität und Alltag.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/skizze3.png" alt="Skizze">
+
+      <h3>Was ist menschlich an Jesus?</h3>
+
+      <p>
+        Offene Diskussion über Nähe, Sprache,
+        Menschlichkeit und Vertrauen.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="kontakt">
+
+  <h2>Anmeldung</h2>
+
+  <p>
+    Neue Teilnehmer sind willkommen.
+  </p>
+
+  <br><br>
+
+  <form>
+
+    <input type="text" placeholder="Name" required>
+
+    <input type="email" placeholder="E-Mail" required>
+
+    <textarea placeholder="Kurze Nachricht"></textarea>
+
+    <button type="submit">Anmelden</button>
+
+  </form>
+
+</section>
+
+<footer>
+
+  <p>
+    Online-Bibel-Leserunde · Gemeinsam lesen,
+    fragen und verstehen
+  </p>
+
+  <div class="footer-buttons">
+
+    <a href="impressum.html">
+      Impressum
+    </a>
+
+    <a href="datenschutz.html">
+      Datenschutz
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
 </html>
