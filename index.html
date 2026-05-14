@@ -1,198 +1,76 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online-Bibel-Leserunde</title>
-
-<style>
-
-body{
-    margin:0;
-    font-family: Georgia, serif;
-    background:#F8F5EF;
-    color:#4B3425;
-    line-height:1.6;
-}
-
-header{
-    background:linear-gradient(to bottom,#4FA0A6,#E9D8B4);
-    padding:80px 20px;
-    text-align:center;
-    color:white;
-}
-
-header h1{
-    font-size:56px;
-    margin-bottom:10px;
-}
-
-header p{
-    font-size:22px;
-    max-width:700px;
-    margin:auto;
-}
-
-nav{
-    background:#4B3425;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-size:18px;
-}
-
-section{
-    padding:60px 20px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.card{
-    background:white;
-    border-radius:18px;
-    padding:30px;
-    margin-bottom:30px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-}
-
-h2{
-    color:#4FA0A6;
-    font-size:36px;
-}
-
-.quote{
-    font-style:italic;
-    font-size:28px;
-    text-align:center;
-    margin-top:30px;
-}
-
-footer{
-    background:#4B3425;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:50px;
-}
-
-.button{
-    display:inline-block;
-    margin-top:20px;
-    background:#F6C56B;
-    color:#4B3425;
-    padding:14px 28px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliothek im Gespräch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
+<header class="hero">
+  <div class="overlay">
+    <nav>
+      <div class="logo">Bibliothek im Gespräch</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aktuell">Aktuell</a></li>
+        <li><a href="#archiv">Archiv</a></li>
+        <li><a href="#kontakt">Anmeldung</a></li>
+      </ul>
+    </nav>
 
-<h1>Online-Bibel-Leserunde</h1>
+    <section id="home" class="hero-content">
+      <h1>Zwischen Geschichten und Menschen</h1>
+      <p>
+        Gemeinsam lesen, verstehen, lachen und erinnern.
+        Ein internationaler literarischer Gesprächsraum zwischen Meer, Bibliothek und menschlicher Begegnung.
+      </p>
 
-<p>
-Gemeinsam lesen, lachen, zweifeln, nachdenken und manchmal alles gleichzeitig.
-</p>
+      <blockquote>
+        „Vielleicht sind unsere Hände Gottes Hände auf der Erde.“
+      </blockquote>
 
-<div class="quote">
-„Vielleicht sind unsere Hände Gottes Hände auf der Erde.“
-</div>
-
-<a class="button" href="#aktuell">
-Zum nächsten Treffen
-</a>
-
+      <a href="#aktuell" class="button">Zum nächsten Treffen</a>
+    </section>
+  </div>
 </header>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#aktuell">Aktuell</a>
-<a href="#archiv">Archiv</a>
-<a href="#kontakt">Kontakt</a>
-</nav>
+<section id="aktuell" class="section card-section">
+  <h2>Nächstes Treffen</h2>
 
-<section id="aktuell">
+  <div class="card">
+    <h3>Wissen oder Zweifel?</h3>
+    <p><strong>Datum:</strong> 26. November · 19:00 Uhr</p>
+    <p><strong>Ort:</strong> Online über Zoom</p>
 
-<div class="card">
-
-<h2>Nächstes Treffen</h2>
-
-<p>
-Thema: Wissen oder Glauben?<br>
-Online über Zoom<br>
-Signal-Gruppe zur Organisation
-</p>
-
-<p>
-Ein lebendiger literarischer Salon zwischen Humor,
-Bibeltexten, Menschlichkeit, Zweifeln und Gesprächen.
-</p>
-
-</div>
-
+    <p>
+      Wir lesen gemeinsam Texte über Vertrauen, Zweifel und menschliche Erfahrung.
+      Offen für Fragen, Humor und unterschiedliche Perspektiven.
+    </p>
+  </div>
 </section>
 
-<section id="archiv">
-
-<div class="card">
-
-<h2>Archiv</h2>
-
-<p>
-Hier entstehen Erinnerungen, Gespräche,
-Zeichnungen, Fragen und Gedanken vergangener Treffen.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>Bilder & Skizzen</h2>
-
-<p>
-Handgezeichnete Bilder und Eindrücke der Teilnehmer.
-</p>
-
-</div>
-
+<section class="section quote-section">
+  <p>
+    „Wir lesen nicht nur Bücher, sondern auch einander.“
+  </p>
 </section>
 
-<section id="kontakt">
+<section id="archiv" class="section">
+  <h2>Archiv vergangener Gespräche</h2>
 
-<div class="card">
+  <div class="archive-grid">
 
-<h2>Kontakt</h2>
+    <div class="archive-card">
+      <img src="images/skizze1.png" alt="Gesprächsskizze">
+      <h3>Erfahrung statt Antworten</h3>
+      <p>
+        Gespräch über Zweifel, Vertrauen und die Frage,
+        wie Menschen mit Unsicherheit leben.
+      </p>
+    </div>
 
-<p>
-Neue Teilnehmer sind willkommen.
-</p>
-
-<p>
-Signal & Zoom Informationen folgen hier später.
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-Online-Bibel-Leserunde © 2026
-</p>
-
-</footer>
-
-</body>
+    <div class="archive-card">
+      <img src="images/skizze2.png" alt="Literarische Zeichnung">
 </html>
