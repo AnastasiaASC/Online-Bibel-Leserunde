@@ -274,17 +274,40 @@ footer{
 
   <br><br>
 
-  <form>
+<form action="https://formspree.io/f/mlgzqeoj" method="POST">
 
-    <input type="text" placeholder="Name" required>
+    <input
+    type="text"
+    name="name"
+    placeholder="Name"
+    required>
 
-    <input type="email" placeholder="E-Mail" required>
+    <input
+    type="email"
+    name="email"
+    placeholder="E-Mail"
+    required>
 
-    <textarea placeholder="Kurze Nachricht"></textarea>
+    <textarea
+    name="message"
+    placeholder="Kurze Nachricht">
+    </textarea>
 
-    <button type="submit">Anmelden</button>
+    <input
+    type="hidden"
+    name="_subject"
+    value="Neue Anmeldung Online-Bibel-Leserunde">
 
-  </form>
+    <input
+    type="hidden"
+    name="_next"
+    value="https://anastasiaasc.github.io/Online-Bibel-Leserunde/danke.html">
+
+    <button type="submit">
+      Anmelden
+    </button>
+
+</form>
 
 </section>
 
